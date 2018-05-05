@@ -1,6 +1,40 @@
-<html ng-app"MemoList">
+<html ng-app="MemoList">
 <head>
+
+  <!-- build:js scripts/vendor.min.js -->
+  <!-- bower:js -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+
+  <!-- build:js style/style.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- inject:css -->
+  <!-- endinject -->
+
+  <!-- inject:js -->
+  <!-- endinject -->
 </head>
 <body>
+<div ng-controller="FirstController">
+  <input ng-model="student.name">
+  <input ng-bind="student.age">
+  <div ng-bind="student.name"></div>
+  <div>{{student.name}}</div>
+</div>
+
+
+<div ng-controller="SecondController as vm">
+
+  <lable>ng-bind: teacher-rest year:</lable><span ng-bind="vm.teacher.restYear"></span><br>
+  <label>expresion: </label><span>{{vm.teacher.restYear}}</span><br>
+
+  <label>ng-model: teater-rest year: </label><input ng-model="vm.teacher.restYear"><br>
+</div>
+
+
 </body>
 </html>
