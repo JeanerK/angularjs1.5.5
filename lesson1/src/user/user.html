@@ -1,0 +1,33 @@
+<div>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-4">
+        <label for="name">name:</label>
+        <input id="name" ng-model="jack.name">
+      </div>
+      <div class="col-md-4">
+        <label for="age">age:</label>
+        <input id="age" ng-model="jack.age">
+      </div>
+    </div>
+  </div>
+  <div class="row" style="font-family: Calibri">
+    <label class="col-md-offset-2">以下内容通过ng-bind指令实现模型数据到页面的单向绑定</label><br>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-4">
+          <label>name bind:</label>
+          <span ng-bind="jack.name"></span>
+        </div>
+        <div class="col-md-4">
+          <label>age:bind</label>
+          <span ng-bind="jack.age"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div ng-bind="vm.user.name"></div>
+  </div>
+</div>
