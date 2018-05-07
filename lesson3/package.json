@@ -1,0 +1,33 @@
+{
+  "name": "lesson3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.module.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-helper-builder-binary-assignment-operator-visitor": "^6.24.1",
+    "babel-helper-function-name": "^6.24.1",
+    "babel-plugin-transform-es2015-function-name": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2016": "^6.24.1",
+    "browser-sync": "^2.24.1",
+    "browser-sync-spa": "^1.0.3",
+    "gulp": "^3.9.1",
+    "gulp-angular-filesort": "^1.2.1",
+    "gulp-angular-templatecache": "^2.2.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-browser-sync": "^0.0.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-inject": "^4.3.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-useref": "^3.1.5",
+    "gulp-util": "^3.0.8",
+    "gulp-wiredep": "^1.2.0",
+    "require-dir": "^1.0.0"
+  }
+}

@@ -1,0 +1,42 @@
+<html ng-app="MemoList">
+<head>
+
+  <!-- build:js scripts/vendor.min.js -->
+  <!-- bower:js -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+
+  <!-- build:css style/style.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- inject:css -->
+  <!-- endinject -->
+
+  <!-- inject:js -->
+  <!-- endinject -->
+
+  <!-- inject:partials -->
+  <!-- angular templates will be automatically converted in js and inserted here -->
+  <!-- endinject -->
+</head>
+<body>
+
+  <h3 class="col-md-offset-2">第一个angularjs应用</h3>
+
+  <div class="row col-md-offset-2">
+    <ul style="list-style: none">
+      <li ui-sref="user">用户</li>
+      <li ui-sref="teacher">teacher</li>
+    </ul>
+  </div>
+
+
+  <div ui-view="user"></div>
+
+  <div ui-view="teacher"></div>
+
+</body>
+</html>
