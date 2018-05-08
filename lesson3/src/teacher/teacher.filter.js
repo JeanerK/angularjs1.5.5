@@ -6,8 +6,12 @@
     teacherFilter.$inject = [];
 
     function teacherFilter() {
-        return function(param1) {
-            return param1
+        return function(age, name, index) {
+            if(age > 40) {
+                return '第' + index + "位，人到中年：" + name;
+            } else if (age < 40) {
+                return '第' + index + "位，正值青年：" + name;
+            }
         }
     }
 })();

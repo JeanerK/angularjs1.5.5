@@ -32,23 +32,4 @@
     </table>
   </div>
 
-  <div style="margin-top: 20px" class="row col-md-offset-2 col-md-8">
-    <label>I'm teacher list:</label><br>
-    <table>
-      <thead>
-      <tr>
-        <th class="col-md-2"> name</th>
-        <th class="col-md-2"> age</th>
-        <th class="col-md-2"> subject</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr ng-repeat="teacher in vm.teacherPosts">
-        <td ng-bind="teacher.name"></td>
-        <td>{{teacher.age + "post"}}</td>
-        <td>{{teacher.subject}}</td>
-      </tr>
-      </tbody>
-    </table>
-  </div>
 </div>
