@@ -12,6 +12,10 @@
     </div>
   </div>
 
+
+
+
+
   <div style="margin-top: 20px" class="row col-md-offset-2 col-md-8">
     <label>I'm teacher list:</label><br>
     <table>
@@ -25,7 +29,7 @@
       <tbody>
       <tr ng-repeat="teacher in vm.teachers">
         <td ng-bind="teacher.name"></td>
-        <td>{{teacher.age + "hello"}}</td>
+        <td>{{teacher.age + $index}}</td>
         <td>{{teacher.subject}}</td>
       </tr>
       </tbody>

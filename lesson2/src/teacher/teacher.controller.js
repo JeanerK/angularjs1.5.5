@@ -7,6 +7,7 @@
     TeacherController.$inject = ['TeacherService'];
 
     function TeacherController(TeacherService) {
+
         const vm = this;
 
         vm.teacher = {
@@ -22,6 +23,7 @@
 
         function getTeachers() {
             TeacherService.queryTeachers().then(function (res) {
+                debugger;
                 vm.teachers = res.data;
             })
         }

@@ -1,11 +1,12 @@
 (function () {
     const app = angular.module('MemoList');
 
-    app.service('TeacherService', teacherService);
+    app.factory('TeacherService', teacherService);
 
     teacherService.$inject = ['$http'];
 
     function teacherService($http) {
+
         return {
             queryTeachers: queryTeachers,
             queryTeacherPostMethod: queryTeacherPostMethod

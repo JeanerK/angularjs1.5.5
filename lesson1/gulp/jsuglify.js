@@ -11,9 +11,9 @@ gulp.task('jsuglify', function () {
     return jspath
     .pipe(filesort())
     // .pipe(babel({
-    //     presets:['env']
+    //     presets:['env']//es6 语法需要编译为es5语法才能被jsuglify丑化
     // }))
-    // .pipe(uglify())//
+    // .pipe(uglify())
     .on('error', function (err) {
         gutil.log(gutil.colors.red('[Error]'), err.toString());
     })
